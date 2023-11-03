@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The Dark Side of Asia: Mapping the Hidden Realities of Human Trafficking Criminology with Data Storytelling</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="fyp1">FYP 1</a>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Heatmap</a></li>
+                <li><a href="#">Timeline</a></li>
+                <li><a href="#">Sankey</a></li>
+                <li><a href="#">Quiz</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="backmountain.png" id="backmountain">
+            <img src="moon.png" id="moon">
+            <h2 id="text">The Dark Side of Asia</h2>
+            <a href="#sec" id="btn">Explore</a>
+            <img src="mountain.png" id="mountain">
+        </section>
+       <div class="sec" id="sec">
+        <h2>Human Trafficking is most prevalent in Asia.<br><br></h2>
+        <p>Of the 600,000 to 800,000 people trafficked annually in the region, <br><br>
+            about 250,000 are estimated to be from South-East Asia and 150,000 from South Asia.<br><br>
+            The majority of Asian victims are trafficked for the purpose of sexual exploitation.<br><br></p>
+       </div>
+       <script>
+            let backmountain = document.getElementById('backmountain');
+            let moon = document.getElementById('moon');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let mountain = document.getElementById('mountain');
+
+            window.addEventListener('scroll',function(){
+                let value = window.scrollY;
+                backmountain.style.top = value * 0.55 + 'px';
+                moon.style.left = value * 1.05 + 'px';
+                mountain.style.top = value * 0 + 'px';
+                text.style.marginRight = value * 4 + 'px';
+                text.style.marginTop = value * -0.25 + 'px';
+                btn.style.marginTop = value * 1.5 + 'px';
+            })
+        </script>
+    </body>
+</html>
+
