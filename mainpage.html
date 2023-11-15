@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Dark Side of Asia: Mapping the Hidden Realities of Human Trafficking Criminology with Data Storytelling</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta http-equiv="Content-Security-Policy" content="frame-src 'self' https://observablehq.com/d/c519191d2152b23d;">
+    </head>
+    <body>
+        <!-- Navigation Bar-->
+        <header>
+            <a href="#" class="fyp1">FYP 1</a>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Heatmap</a></li>
+                <li><a href="#">Timeline</a></li>
+                <li><a href="#">Sankey</a></li>
+                <li><a href="#">Quiz</a></li>
+            </ul>
+        </header>
+
+        <!-- Mainpage background images -->
+        <section class="homepage">   
+            <img src="img/backmountain.png" id="backmountain">
+            <img src="img/moon.png" id="moon">
+            <h2 id="text">The Dark Side of Asia</h2>
+            <a href="#sec" id="btn">Explore</a>
+            <img src="img/mountain.png" id="mountain">
+        </section>
+
+        <!-- next section -->
+       <div class="sec" id="sec">   
+        <h2>Human Trafficking is most prevalent in Asia.<br><br></h2>
+        <p>Of the 600,000 to 800,000 people trafficked annually in the region, <br><br>
+            about 250,000 are estimated to be from South-East Asia and 150,000 from South Asia.<br><br>
+            The majority of Asian victims are trafficked for the purpose of sexual exploitation.<br><br></p>
+       </div>
+
+       <!-- Mainpage background images javascrip -->
+       <script>  
+            let backmountain = document.getElementById('backmountain');
+            let moon = document.getElementById('moon');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let mountain = document.getElementById('mountain');
+
+            window.addEventListener('scroll',function(){
+                let value = window.scrollY;
+                backmountain.style.top = value * 0.55 + 'px';
+                moon.style.left = value * 1.05 + 'px';
+                mountain.style.top = value * 0 + 'px';
+                text.style.marginRight = value * 4 + 'px';
+                text.style.marginTop = value * -0.25 + 'px';
+                btn.style.marginTop = value * 1.5 + 'px';
+            })
+        </script>
+
+        <!-- Horizontal scroll section 1 -->
+        <div class="types">
+            <section id="author">
+                <div class="container">
+                <h1>Author</h1>
+                <h2>Tang Siao Hue</h2>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                     when an unknown printer took a galley of type and scrambled it to make a type 
+                     specimen book. It has survived not only five centuries, but also the leap into 
+                     electronic typesetting, remaining essentially unchanged. It was popularised in
+                      the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                       and more recently with desktop publishing software like Aldus PageMaker 
+                       including versions of Lorem Ipsum.
+                </p>
+                <img src="img/aurthor.jpeg" id="author">
+                </div>
+            </section>
+
+            <div class="sticky_parent">
+                <div class="sticky">
+                    <div class="scroll_section"></div>
+                </div>
+            </div>
+
+            <section id="organ">
+                <div class="container">
+                <h1>About</h1>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                     when an unknown printer took a galley of type and scrambled it to make a type 
+                     specimen book. It has survived not only five centuries, but also the leap into 
+                     electronic typesetting, remaining essentially unchanged. It was popularised in
+                      the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                       and more recently with desktop publishing software like Aldus PageMaker 
+                       including versions of Lorem Ipsum.
+                </p>
+                </div>
+            </section>
+
+            <div class="sticky_parent">
+                <div class="sticky">
+                    <div class="scroll_section"></div>
+                </div>
+            </div>
+
+            <section id="drug">
+                <div class="container">
+                <h1>End</h1>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                     when an unknown printer took a galley of type and scrambled it to make a type 
+                     specimen book. It has survived not only five centuries, but also the leap into 
+                     electronic typesetting, remaining essentially unchanged. It was popularised in
+                      the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                       and more recently with desktop publishing software like Aldus PageMaker 
+                       including versions of Lorem Ipsum.
+                </p>
+                </div>
+            </section>
+
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
+
